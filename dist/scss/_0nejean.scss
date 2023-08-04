@@ -3,10 +3,10 @@
 // ********************************************************************************************************************************
 
 .top {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 24px;
   display: block;
-  padding: 20px;
+  margin: 40px 0;
 }
 
 .image1 {
@@ -73,7 +73,7 @@
   margin: 10px 0 50px;
   b {
     font-size: 35px;
-    line-height: 60px;
+    line-height: 35px;
     display: block;
     margin-bottom: 20px;
   }
@@ -195,6 +195,7 @@
 }
 
 .icon-g {
+  margin: 50px 0;
   .icon-ul {
     margin: 30px;
     display: flex;
@@ -367,34 +368,13 @@
     width: 50%;
     height: 50px;
     border: 1px solid #000;
-    &::before {
-      position: absolute;
-      content: "\f054";
-      font-family: "Font Awesome 6 Free";
-      top: 0;
-      right: 10%;
-      font-weight: 900;
-    }
   }
 
-  .space-btm {
+  .space-two-btm {
     margin-bottom: 30px;
   }
   .space-btm-last {
     margin-bottom: 100px;
-  }
-  .epr-btm {
-    position: relative;
-    margin-bottom: -50px;
-    font-weight: 500;
-    &::before {
-      position: absolute;
-      content: "\f054";
-      font-family: "Font Awesome 6 Free";
-      top: 19px;
-      right: -30%;
-      font-weight: 900;
-    }
   }
 }
 
@@ -423,14 +403,20 @@
 // product.html - 이상무 **********************************************************************************************************
 // ********************************************************************************************************************************
 
-.list-ul {
-  display: flex;
-  justify-content: space-between;
-  padding: 4%;
-  .list-a {
-    transition: all 0.1s linear;
-    &:hover {
-      border-bottom: 1px solid #000;
+.list-wrap {
+  background-color: rgba(0, 0, 0, 0.05);
+  .list-ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    .list-a-blod {
+      font-weight: bold;
+      .list-a {
+        transition: all 0.1s linear;
+        &:hover {
+          border-bottom: 1px solid #000;
+        }
+      }
     }
   }
 }

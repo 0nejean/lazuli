@@ -18,7 +18,7 @@ strong {
 .royal-txt-g {
   .royal_tit_mini {
     display: block;
-    margin: 109px 0 50px;
+    margin: 50px 0;
   }
   .royal-tit-g {
     display: block;
@@ -31,13 +31,14 @@ strong {
     display: block;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 }
 .sec-royal_main,
 .sec-royal-sub-nec {
   a {
     height: 450px;
+    font-size: 16px;
   }
 }
 .sec-royal-sub-regal {
@@ -49,7 +50,6 @@ strong {
   width: 119px;
   margin-bottom: 43px;
   a {
-    position: relative;
     display: block;
     width: 119px;
     height: 39px;
@@ -59,28 +59,23 @@ strong {
     color: #fff;
     text-align: center;
     font-size: 16px;
-    font-weight: 400;
   }
 }
 .sec-btn-royal {
-  margin-bottom: 30px;
-  button {
+  margin-bottom: 100px;
+  a {
     position: relative;
     display: block;
-    width: 320px;
-    height: 52px;
     border: 1px solid #000;
-    margin: 0 auto;
     line-height: 52px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-weight: 500;
     .material-icons-outlined {
       display: block;
       position: absolute;
       top: 50%;
-      right: 25%;
+      right: 30%;
       transform: translateY(-50%);
     }
   }
@@ -95,7 +90,7 @@ strong {
     display: block;
     width: 100%;
     background: #fdfdfd;
-    margin: 30px 0;
+    margin: 20px 0;
   }
 }
 .wd-txt-g {
@@ -136,9 +131,9 @@ strong {
     margin-bottom: 30px;
   }
   .sec-btn-raser {
-    button {
+    a {
       display: block;
-      width: 320px;
+      width: 100%;
       height: 52px;
       border: 1px solid #000;
       margin: 0 auto;
@@ -151,14 +146,7 @@ strong {
   }
 }
 .lst_wdring {
-  &::after {
-    content: "";
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-    margin: 30px;
-    border-bottom: 1px solid #111;
-  }
+  margin-bottom: 80px;
   .tit_wdring_lazuli {
     text-align: center;
     font-size: 25px;
@@ -172,172 +160,197 @@ strong {
   text-align: center;
   font-size: 18px;
   font-weight: 900;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .wd_btn_txt {
-  button {
-    position: relative;
-    display: block;
-    width: 50px;
-    margin: 0 auto;
-    &::after {
-      position: absolute;
-      top: 3px;
-      left: 100%;
-      content: "\e5e1";
-      font-family: "Material Icons Outlined";
-      font-size: 12px;
-    }
+  position: relative;
+  display: block;
+  text-align: center;
+  &::after {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translateX(200%);
+    content: "\e5e1";
+    font-family: "Material Icons Outlined";
+    font-size: 12px;
   }
 }
-.footer-info {
+.location-info {
   a {
     display: block;
     height: 375px;
   }
 }
-.footer-images {
+.location-images {
   img {
     width: 100%;
   }
 }
-.footer-info-txt {
+.location-info-txt {
   display: block;
-  width: 200px;
-  margin: 0 auto;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 35px 0;
   text-align: center;
   font-family: "Noto sans KR";
-  .footertxt-tit {
+  .locationtxt-tit {
     font-weight: 600;
-    font-size: 30px;
-    margin-bottom: 32px;
+    font-size: 32px;
   }
-  .footer-txt-intro {
+  .location-txt-intro {
     font-size: 18px;
     font-weight: 400;
+    margin-top: 30px;
   }
 }
-.sec-btn-footer {
-  button {
+.sec-btn-location {
+  a {
     display: block;
-    width: 320px;
+    width: 100%;
     height: 52px;
     border: 1px solid #000;
-    margin: 0 auto;
     line-height: 52px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 
 // cart
 .event-cart-sec-g {
-  img {
-    width: 100%;
-    background: #fdfdfd;
-    margin: 30px 0;
+  .swiper-slide {
+    img {
+      width: 100%;
+      background: #fdfdfd;
+      margin: 20px 0;
+    }
   }
 }
 .reser_service {
   .reser_intro {
     display: block;
-    border-top: 1px solid #f5f5f5;
-    border-bottom: 1px solid #f5f5f5;
     padding: 10px 0;
-    margin: 90px 0 30px;
+    margin: 30px 0 50px;
     .reser_tit {
-      font-size: 20px;
+      font-size: 28px;
+      font-weight: 700;
     }
     .reser_txt {
       padding: 5px 0;
       font-size: 16px;
+      font-weight: 400;
+      color: #888;
+      margin-top: 15px;
     }
     .reser_togo {
       display: flex;
-      li {
-        padding: 0 3px;
-        a {
-          &:hover {
-            border-bottom: 1px solid #111;
-          }
-        }
+      align-items: center;
+      font-size: 16px;
+      margin-top: 15px;
+      width: 165px;
+      height: 35px;
+      border-radius: 100px;
+      a {
+        padding: 0 5px;
+        font-weight: 500;
+        color: #fff;
+        background: #070322;
+      }
+      em {
+        margin: 0 5px;
+        font-weight: 500;
+        opacity: 0.9;
       }
     }
   }
 }
 .reser_info {
   display: block;
-  border-top: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
   padding: 10px 0;
-  .reser_guid {
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    margin: 15px 0;
-  }
+  // .reser_guid {
+  //   display: block;
+  //   font-size: 16px;
+  //   font-weight: 500;
+  //   text-align: center;
+  //   margin: 15px 0;
+  // }
 }
 .reser-g {
   font-size: 16px;
-  font-weight: 500;
+}
+.reser_lst_tit {
+  font-size: 28px;
+  font-weight: 700;
 }
 .reser_lst {
-  line-height: 2;
-  .reser_lst_tit {
-    font-size: 20px;
-    font-weight: 600;
-  }
-  .reser_total {
+  line-height: 2.5;
+  margin-top: 20px;
+  .reser_promotion {
     position: relative;
-    &::after {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 30px;
+    &::before {
+      content: "";
       position: absolute;
-      content: "―";
-      top: 1px;
-      right: 0;
-      font-size: 16px;
-      font-weight: 500;
+      top: 50%;
+      left: 0;
+      transform: translateY(-26%);
+      width: 24px;
+      height: 24px;
+      background: url(../../images/contents/Cart_TIP.png) no-repeat 0 0 /
+        contain;
     }
+    // .reser_cart_tip_img {
+    //   width: 22px;
+    //   height: 16px;
+    //   opacity: 0.9;
+    //   margin-right: 3px;
+    // }
   }
   .reser_pay {
-    position: relative;
-    &::after {
-      position: absolute;
-      content: "―";
-      top: 1px;
-      right: 0;
-      font-size: 16px;
-      font-weight: 500;
+    font-weight: 400;
+    opacity: 0.7;
+    .reser_pay_won {
+      float: right;
     }
   }
   .reser_cost {
-    position: relative;
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      content: "무료";
-      font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+    .reser_cost_won {
+      float: right;
+    }
+  }
+  .reser_total {
+    font-weight: 500;
+    font-size: 18px;
+    .reser_total_won {
+      float: right;
     }
   }
 }
-.reser-btn {
-  margin: 30px 0;
-  button {
-    width: 335px;
+.reser_come_visit {
+  margin: 20px 0 80px;
+  a {
+    display: block;
+    width: 100%;
     height: 62px;
-    background: #eee;
+    background: #070322;
     border-radius: 100px;
+    color: #fff;
+    text-align: center;
+    line-height: 62px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 .item_recom {
   margin-bottom: 30px;
+  .item_recom_tit {
+    font-size: 28px;
+  }
   .swiper_ocean_txt,
   .swiper_avenue_txt {
     font-size: 16px;

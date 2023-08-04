@@ -6,16 +6,15 @@
 //wrap 간격
 .wrap {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 // 글넣는곳 좌우간격
 .container {
   padding: 0 20px;
 }
 // 이미지 가로사이즈
-.section-g {
-  .widths-g img {
-    width: 100%;
-  }
+.widths-g img {
+  width: 100%;
 }
 
 //header
@@ -114,7 +113,7 @@ header {
       width: 26px;
       height: 2px;
       background: rgb(0, 0, 0);
-      transition: all 1s;
+      transition: all 0.3s;
     }
     span {
       &:nth-child(3) {
@@ -165,191 +164,7 @@ header {
       &::after {
         content: "";
         top: 0;
-        right: -75px;
-        width: 30px;
-        height: 30px;
-        display: block;
-        position: absolute;
-        background-size: 30px 30px;
-        background-position: 30px 30px;
-        background-image: url(/lazuli/images/contents/nav-arrow-right.png);
-      }
-    }
-    .link-main {
-      font-family: Noto Serif KR;
-      font-size: 20px;
-      font-weight: 700;
-      position: relative;
-      .icon-c {
-        position: absolute;
-        top: 50%;
-        right: -200%;
-        transform: translate(0, -40%);
-      }
-    }
-    .link-sub {
-      font-family: Noto Sans KR;
-      font-size: 16px;
-      font-weight: 600;
-      padding-left: 20px;
-    }
-    .link-depth2 {
-      padding-top: 10px;
-    }
-    .link-depth3 {
-      padding-top: 5px;
-      padding-left: 30px;
-      li {
-        padding-top: 10px;
-      }
-    }
-    .btn-burger::before {
-      content: "\f0c9";
-      font-weight: 900;
-    }
-  }
-}
-// header2
-#header {
-  z-index: 10005;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 1px solid #000;
-  background-color: #fff;
-  .inner {
-    display: flex;
-    justify-content: space-between;
-  }
-  .logo1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Libre Bodoni", serif;
-    font-weight: 700;
-    font-size: 32px;
-  }
-  .lst-util {
-    display: flex;
-  }
-  .nav-g {
-    width: 40px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &::before {
-      font-family: "Font Awesome 6 Free";
-      font-size: 18px;
-    }
-  }
-
-  .link1 {
-    b {
-      font-size: 22px;
-    }
-  }
-
-  .gnb-wrap {
-    .input-burger {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 0;
-      opacity: 0;
-      // css형식 .input-burger:checked + label .bar {}
-      &:checked {
-        color: #fff;
-        // input이 선택 됐을때
-        & + label {
-          .bar {
-            &:nth-child(2) {
-              transform: rotate(45deg) translate(5px, 5px);
-              background-color: #fff;
-            }
-            &:nth-child(3) {
-              opacity: 0;
-            }
-            &:nth-child(4) {
-              transform: rotate(-45deg) translate(5px, -5px);
-              background-color: #fff;
-            }
-          }
-        }
-        & ~ #gnb {
-          left: 0;
-        }
-      }
-    }
-  }
-  .label-burger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 40px;
-    height: 60px;
-    .bar {
-      z-index: 10000;
-      display: flex;
-      width: 26px;
-      height: 2.5px;
-      background: rgb(0, 0, 0);
-      transition: all 1s;
-    }
-    span {
-      &:nth-child(3) {
-        margin: 5px 0;
-      }
-    }
-  }
-
-  #gnb {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    bottom: 0;
-    width: 100%;
-    max-width: 375px;
-    padding: 0 20px;
-    background: #070322;
-    display: flex;
-    transition: all 0.4s;
-    .gnb-main {
-      position: absolute;
-      top: 60px;
-    }
-  }
-
-  .sec-link {
-    .on {
-      .link-depth2 {
-        max-height: 100%;
-        padding-bottom: 50px;
-      }
-    }
-
-    .link-depth2 {
-      padding: 0;
-      top: 100px;
-      left: 0;
-      right: 0;
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.3s;
-    }
-
-    .link-depth1 a {
-      color: #fff;
-      position: relative;
-      display: flex;
-      &::after {
-        content: "";
-        top: 0;
-        right: -75px;
+        right: -20%;
         width: 30px;
         height: 30px;
         display: block;
@@ -386,6 +201,10 @@ header {
       li {
         padding-top: 10px;
       }
+    }
+    .btn-burger::before {
+      content: "\f0c9";
+      font-weight: 900;
     }
   }
 }
@@ -561,6 +380,14 @@ header {
 }
 
 // 버튼
+
+.bottom {
+  font-size: 30px;
+  line-height: 50px;
+  display: block;
+  padding: 0 20px;
+}
+
 .jsh {
   width: 119px;
   height: 39px;
@@ -569,4 +396,77 @@ header {
   color: #fff;
 }
 
-@import "main", "contents", "yeeanjj", "0nejean", "visit";
+// 큰버튼
+.sec-btn-raser {
+  button {
+    display: block;
+    width: 320px;
+    height: 52px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    line-height: 52px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+}
+
+// 스플래시
+.IamASplash {
+  .Splash-img {
+    z-index: 100000000;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    animation-name: splash;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+  }
+  @keyframes splash {
+    0% {
+      opacity: 100%;
+    }
+    5% {
+      opacity: 95%;
+    }
+    15% {
+      opacity: 85%;
+    }
+    25% {
+      opacity: 75%;
+    }
+    35% {
+      opacity: 65%;
+    }
+    45% {
+      opacity: 55%;
+    }
+    50% {
+      opacity: 50%;
+    }
+    65% {
+      opacity: 35%;
+    }
+    75% {
+      opacity: 15%;
+    }
+    85% {
+      opacity: 15%;
+    }
+    100% {
+      opacity: 0%;
+      display: none;
+      visibility: hidden;
+    }
+  }
+}
+@import "main", "contents", "yeeanjj", "0nejean", "belluna";
