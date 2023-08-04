@@ -51,6 +51,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -161,7 +165,7 @@
         <!-- section3 -->
         <div class="section3">
           <div class="eg-ring-sub">
-            <strong class="txt-strong">lazuli의 추천상품</strong>
+            <div class="txt-strong-kr">lazuli의 추천상품</div>
             <img
               src="https://www.harrywinston.com/-/media/project/harry-winston/corporate/harry-winston-int/fine-jewelry/others-by-harry-winston/brilliant-love-diamond-engagement-ring/brilliant_love_by_harry_winston_engagement_ring__diamond__rgdprd030brl_e-1.png?rev=21317b4eb5014a798f08c2f0d495f102"
               alt="engagement ring image"
@@ -171,8 +175,12 @@
               Engagement <br />
               Diamond Ring</strong
             >
-            <div class="button-wrap">
-              <button class="epr-btm">EXPLORE</button>
+
+            <div class="container sec-btn-explore">
+              <a href="#">
+                <span>Explore</span>
+                <span class="material-icons-outlined">chevron_right </span>
+              </a>
             </div>
 
             <div class="eg-ring-sub">
@@ -184,61 +192,58 @@
                 Micropavé Diamond Narrow<br />
                 Wedding Band</strong
               >
-              <div class="button-wrap">
-                <button class="epr-btm">EXPLORE</button>
+
+              <div class="container sec-btn-explore">
+                <a href="#">
+                  <span>Explore</span>
+                  <span class="material-icons-outlined">chevron_right </span>
+                </a>
+              </div>
+
+              <div class="eg-ring-sub">
+                <img
+                  src="https://www.harrywinston.com/-/media/project/harry-winston/corporate/harry-winston-int/fine-jewelry/others-by-harry-winston/the-one-double-halo-micropave-diamond-engagement-ring/the_one_double_halo_round_brilliant_engagement_ring_diamond_rgdprd010dh_e-1.png?rev=ca3a44f1b85c4bfe8a37271da84f2197"
+                  alt="engagement ring image"
+                />
+                <strong class="txt-strong">
+                  The One Double Halo<br />
+                  Micropavé Diamond<br />
+                  Engagement Ring</strong
+                >
+
+                <div class="container sec-btn-explore">
+                  <a href="#">
+                    <span>Explore</span>
+                    <span class="material-icons-outlined">chevron_right </span>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="eg-ring-sub">
+            <!-- have to add on footer -->
+            <div class="find">
               <img
-                src="https://www.harrywinston.com/-/media/project/harry-winston/corporate/harry-winston-int/fine-jewelry/others-by-harry-winston/the-one-double-halo-micropave-diamond-engagement-ring/the_one_double_halo_round_brilliant_engagement_ring_diamond_rgdprd010dh_e-1.png?rev=ca3a44f1b85c4bfe8a37271da84f2197"
-                alt="engagement ring image"
+                src="https://www.harrywinston.com/-/media/project/harry-winston/corporate/harry-winston-int/global/hero/hero-side-by-side/find-my-harry-winston/find-my-harry-winston.jpg?rev=4dea995cda14401cadec208474337bec"
+                alt="find my harry winston image"
               />
-              <strong class="txt-strong">
-                The One Double Halo<br />
-                Micropavé Diamond<br />
-                Engagement Ring</strong
-              >
-              <div class="button-wrap">
-                <button class="epr-btm">EXPLORE</button>
+              <div class="txt-strong-kr">오시는 길</div>
+              <p class="txt-p">
+                늘 여러분 곁에 있습니다.<br />
+                라줄리만의 특별한 세계로 <br />
+                초대합니다.
+              </p>
+              <div class="container button-wrap">
+                <button class="button space-btm-last">
+                  <span>둘러보기</span>
+                </button>
               </div>
-            </div>
-          </div>
-
-          <!-- have to add on footer -->
-          <div class="find">
-            <img
-              src="https://www.harrywinston.com/-/media/project/harry-winston/corporate/harry-winston-int/global/hero/hero-side-by-side/find-my-harry-winston/find-my-harry-winston.jpg?rev=4dea995cda14401cadec208474337bec"
-              alt="find my harry winston image"
-            />
-            <strong class="txt-strong">오시는 길</strong>
-            <p class="txt-p">
-              늘 여러분 곁에 있습니다.<br />
-              라줄리만의 특별한 세계로 <br />
-              초대합니다.
-            </p>
-            <div class="container button-wrap">
-              <button class="button space-btm-last">
-                <span>자세히 보기</span>
-              </button>
             </div>
           </div>
         </div>
       </main>
 
       <!-- footer -->
-      <footer id="footer" class="container">
-        <div class="footer-util">
-          <ul class="lst-util">
-            <li>
-              <button class="btn-g btn-home">홈</button>
-            </li>
-            <li><button class="btn-g btn-wish">위시리스트</button></li>
-            <li><button class="btn-g btn-bell">알림</button></li>
-            <li><button class="btn-g btn-my">마이페이지</button></li>
-          </ul>
-        </div>
-      </footer>
+      <footer data-include-path="./outline/footer.html"></footer>
     </div>
   </body>
 </html>
