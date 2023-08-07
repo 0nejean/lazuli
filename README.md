@@ -21,6 +21,8 @@ _'해리윈스턴'_ 웹사이트를 참조하여,
 
 > **[List Page](https://eehd80.github.io/lazuli/!list.html)**
 
+###### \*스티커(초록/노랑/빨강) = 해당페이지 작성을 의미
+
 ![페이지 구성](./images/main/WORKFLOW.jpg)
 
 <hr/>  
