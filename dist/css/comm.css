@@ -1359,7 +1359,23 @@ strong {
 }
 
 .icon-g {
+  position: relative;
   margin: 50px 0;
+}
+.icon-g .iconname-ul {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-g .iconname-ul .iconname-g {
+  transform: translate(-16%, -50%);
+}
+.icon-g .iconname-ul .p-icon3 {
+  transform: translate(-22%, -50%);
+}
+.icon-g .iconname-ul .p-icon4 {
+  transform: translate(14%, -50%);
 }
 .icon-g .icon-ul {
   margin: 30px;
@@ -1415,30 +1431,6 @@ strong {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.icon-g li .p-icon1 {
-  position: absolute;
-  top: 600px;
-  left: 10px;
-  text-align: center;
-}
-.icon-g li .p-icon2 {
-  position: absolute;
-  top: 600px;
-  left: 100px;
-  text-align: center;
-}
-.icon-g li .p-icon3 {
-  position: absolute;
-  top: 600px;
-  left: 213px;
-  text-align: center;
-}
-.icon-g li .p-icon4 {
-  position: absolute;
-  top: 600px;
-  left: 290px;
-  text-align: center;
 }
 
 .ring-list {
