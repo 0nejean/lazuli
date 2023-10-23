@@ -30,7 +30,7 @@ _'해리윈스턴'_ 웹사이트를 참조하여,
 
 `Main Designer - 서연주`  
 `Lead Developer - 이성재`  
-`Rroject Reader - 박원진`
+`Project Reader - 박원진`
 
 < Skills & Tools >  
 ![SNT](./images/main/skillntools.png)
